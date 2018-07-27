@@ -1,0 +1,25 @@
+<input [(ngModel)]="searchText" placeholder="Search">
+  <button (click)="goToList()">
+      Search
+  </button>
+  <a href="home"><img id="logo" src="../../assets/logo2.png"></a>
+  
+
+<ul>
+  <ul *ngFor="let item of db| filter : searchText">
+    <h1>
+        Related To: {{item.key}}
+    </h1>
+    <ul>
+      <ul *ngFor="let anime of item.value">
+          <a href="description"><p id="namecolor">{{anime.name}}</p></a>
+        <a href="description"><img src="{{anime.picture}}" height="{{anime.pic_height}}" width="{{anime.pic_width}}"></a>
+        
+        <div>
+            <p id="animeloc">Summary: {{anime.description}}</p>
+        </div>
+        <hr> 
+      </ul>
+    </ul>
+  </ul>
+</ul>

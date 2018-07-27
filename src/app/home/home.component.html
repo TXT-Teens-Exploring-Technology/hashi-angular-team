@@ -1,0 +1,31 @@
+<div class="caro">
+  <div class="overlay">
+    <h1>WELCOME TO HASHI</h1>
+    <h3 id="sub1">The bridge between anime and non-anime interests.</h3>
+    <h3 id="sub2">Browse non-anime shows and discover</h3>
+    <h3 id="sub3">anime shows</h3>
+  </div>
+    <ngb-carousel>
+        <ng-template ngbSlide class="slide">
+          <img [src]="images[0]" alt="Random first slide">
+        </ng-template>
+        <ng-template ngbSlide class="slide">
+          <img [src]="images[1]" alt="Random first slide">
+        </ng-template>
+        <ng-template ngbSlide class="slide">
+          <img [src]="images[2]" alt="Random first slide">
+        </ng-template>
+      </ngb-carousel>
+</div>
+
+<div class="container-fluid" id="body">
+  <h1>Top Shows</h1>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4" *ngFor="let item of topShows">
+      <div class="pic-container" (click)="navigate(item.id)">
+        <img [src]="item.url" alt="">
+      </div>
+    </div>
+
+  </div>
+</div>
