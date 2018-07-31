@@ -18,29 +18,41 @@ export class HomeComponent implements OnInit {
 
   public topShows = [
     {
-      id: 'arrow',
-      url: 'assets/topShows/arrow.jpg',
+      id: 'Arrow',
+      url: 'assets/topShows/arrow2.jpg',
     },
     {
-      id: 'dead',
-      url:  'assets/topShows/dead.jpg',
+      id: 'Yona',
+      url:  'assets/anime/yona1.jpg',
     },
     {
-      id: 'dexter',
-      url: 'assets/topShows/dexter.jpg',
+      id: 'Drifter',
+      url: 'assets/anime/drifter.jpg',
     },
     {
-      id: 'parks',
-      url: 'assets/topShows/parks.jpg',
-    },
-    {
-      id: 'gotham',
+      id: 'Gotham',
       url: 'assets/topShows/gotham.jpg',
     },
     {
-      id: 'spongebob',
-      url:  'assets/topShows/spongebob.jpg',
-    }
+      id: 'Mob Psycho',
+      url: 'assets/anime/mob.jpg',
+    },
+    {
+      id: 'Basilisk',
+      url:  'assets/anime/basilisk.jpg',
+    },
+    {
+      id: 'Walking Dead',
+      url:  'assets/topShows/dead.jpg',
+    },
+    {
+      id: 'Attack on Titan',
+      url:  'assets/anime/aot.jpg',
+    },
+    {
+      id: 'Black Clover',
+      url:  'assets/anime/blackclover.jpg',
+    },
   ];
   constructor(private router: Router) { }
 
