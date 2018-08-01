@@ -23,3 +23,9 @@
     border-top-right-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
 }
+.hashi-link{
+    color: white;
+    position: relative;
+    left: -22px;
+    bottom: -5px;
+}

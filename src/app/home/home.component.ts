@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { getBootstrapListener } from '../../../node_modules/@angular/router/src/router_module';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
@@ -9,7 +9,9 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  searchText;
+  @ViewChild('carousel') carousel: any;
+  @ViewChild('carousel1') carousel1: any;
+searchText;
   public images = [
     'assets/shows/flash.jpg',
     'assets/shows/rick.jpg',
@@ -21,39 +23,50 @@ export class HomeComponent implements OnInit {
       id: 'Arrow',
       url: 'assets/topShows/arrow2.jpg',
     },
-    {
-      id: 'Yona',
-      url:  'assets/anime/yona1.jpg',
-    },
-    {
-      id: 'Drifter',
-      url: 'assets/anime/drifter.jpg',
-    },
-    {
-      id: 'Gotham',
-      url: 'assets/topShows/gotham.jpg',
-    },
-    {
-      id: 'Mob Psycho',
-      url: 'assets/anime/mob.jpg',
-    },
-    {
-      id: 'Basilisk',
-      url:  'assets/anime/basilisk.jpg',
-    },
-    {
-      id: 'Walking Dead',
-      url:  'assets/topShows/dead.jpg',
-    },
-    {
-      id: 'Attack on Titan',
-      url:  'assets/anime/aot.jpg',
-    },
-    {
-      id: 'Black Clover',
-      url:  'assets/anime/blackclover.jpg',
-    },
+    /*{
+      id: 'The Walking Dead',
+      url: 'assets/topShows/dead.jpg',
+    },*/
   ];
+
+  slides: Array<Object> = [
+    {'src': 'assets/anime/yona1.jpg'},
+    {'src': 'assets/anime/drifter.jpg'},
+    {'src': 'assets/anime/basilisk.jpg'},
+  ];
+  options: Object = {
+    clicking: true,
+    sourceProp: 'src',
+    visible: 7,
+    perspective: 1,
+    startSlide: 0,
+    border: 3,
+    dir: 'ltr',
+    width: 360,
+    height: 270,
+    space: 220,
+    autoRotationSpeed: 5000,
+    loop: true
+ };
+ slide1: Array<Object> = [
+  {'src': 'assets/anime/yona1.jpg'},
+  {'src': 'assets/anime/blackclover.jpg'},
+  {'src': 'assets/anime/aot.jpg'},
+];
+options1: Object = {
+  clicking: true,
+  sourceProp: 'src',
+  visible: 7,
+  perspective: 1,
+  startSlide: 0,
+  border: 3,
+  dir: 'ltr',
+  width: 360,
+  height: 270,
+  space: 220,
+  autoRotationSpeed: 5000,
+  loop: true
+};
   constructor(private router: Router) { }
 
 
@@ -65,6 +78,11 @@ export class HomeComponent implements OnInit {
   navigate(id) {
     this.router.navigate(['search', id]);
   }
+
+  slideClicked (index) {
+    this.carousel.slideClicked(index);
+    this.carousel1.slideClicked(index);
+   }
 
 }
 

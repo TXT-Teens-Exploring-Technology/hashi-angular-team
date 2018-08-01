@@ -59,7 +59,7 @@ export class ResultsComponent implements OnInit {
        this.selectedShow = params;
        console.log(this.selectedShow);
     });
-    if (this.selectedShow.id === 'dexter' || this.selectedShow.id === 'dead' || this.selectedShow.id === 'arrow' ){
+    if (this.selectedShow.id === 'dexter' || this.selectedShow.id === 'dead' || this.selectedShow.id === 'arrow' ) {
       this.animelist = this.anime;
     }else{
       this.animelist = this.anime2;
