@@ -122,4 +122,14 @@ img {
 
 .search{
     width:300px;
+    position: relative;
+    bottom: 75px;
+    left: -45px;
+
+}
+.input-group-text{
+    position: relative;
+    left: 835px;
+    bottom: 105px;
+    border-bottom-right-radius: 5px !important;
 }
