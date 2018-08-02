@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, ActivatedRoute, Router } from '../../../node_modules/@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-results',
@@ -54,7 +55,7 @@ export class ResultsComponent implements OnInit {
   ];
   public animelist;
   public selectedShow;
-  constructor(public route: ActivatedRoute, public router: Router) {
+  constructor(public route: ActivatedRoute, public router: Router, public data: DataService) {
     this.route.params.subscribe((params) => {
        this.selectedShow = params;
        console.log(this.selectedShow);
@@ -67,6 +68,7 @@ export class ResultsComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.data.setFlag(true);
   }
 
   navigate(id) {

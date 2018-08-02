@@ -1,84 +1,136 @@
-.img-container{
-    width: 300px;
-    margin: auto;
-    /* padding-top: 50px; */
-    box-shadow: 10px 10px 5px black;
-    position: relative;
-    bottom: -15px;
-    border-radius: 40px;
-}
 
 
-.custom{
-    display: inline-block;
-    border: solid thin white;
-    color: white;
-    background-color: #26408B;
-    transition: all ease-in 300ms;
-    height: 65px;
-    width: 205px;
-    margin: 0 25px;
-    font-size: 26px;
-}
-
-.custom:hover{
-    color: #26408B;
-    border: solid thin #26408B;
-    background-color: white;
-}
-
-.watch{
-    padding-top: 30px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-family: optima;
-}
-
-.rating{
-    text-align: center;
-    margin-top: 20px;
-    text-transform: capitalize;
-    font-size: 31px;
-    font-family: optima;
-    color: white;
-}
-
-.yellow{
-    color: orange;
-}
-.gif {
-    position: relative;
-    display: block;
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    padding-top: 50px; 
-    overflow: hidden;
-}
-
-.gif img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-}
-.description {
-    font-family: optima;
-    text-align: center;
-    padding-top: 30px;
-    color: white;
-}
-.bg {
-    background-image: url("https://i.pinimg.com/originals/0d/19/eb/0d19eb9a45115590ef42eeb6a6a51b37.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:100vw;
-    height: 100vh;
-
-}
-.backgroundblue {
-    background-color: #26408B;
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-top: 35px;
-    border-radius: 45px;
-}
+    
+    #main{
+        display: block;
+        width: 240px;
+        height: 365px;
+        overflow: hidden;
+        margin: auto;
+        border-radius: 40px;
+    }
+    
+    .img-container{
+        width: 100%;
+        height: 100%;
+    
+        margin: auto;
+        /* padding-top: 50px; */
+        box-shadow: 10px 10px 5px black;
+        position: relative;
+        bottom: -15px;
+        border-radius: 40px;
+    }
+    
+    
+    .custom{
+        display: inline-block;
+        border: solid thin #26408B;;
+        color: white;
+        background-color: #26408B;
+        transition: all ease-in 300ms;
+        height: 65px;
+        width: 205px;
+        margin: 0 75px;
+        margin-top: 45px;
+        font-size: 26px;
+        line-height: 50px;
+    }
+    
+    .custom:hover{
+        color: #26408B;
+        border: solid thin #26408B;
+        background-color: white;
+    }
+    
+    .watch{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-family: optima;
+    }
+    
+    .rating{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 38px;
+        font-family: optima;
+        color: black;
+    }
+    
+    .blue{
+        color: #26408B;
+    }
+    .gif {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding-top: 50px; 
+        overflow: hidden;
+        border-radius: 40px;
+    }
+    
+    .gif img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 40px;
+    }
+    .description {
+        font-family: optima;
+        text-align: center;
+        color: black;
+        font-size: 26px;
+        padding: 30px 75px;
+    }
+    .bg {
+        padding: 75px 150px;
+        background-image: url("/assets/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:100vw;
+        min-height: 100vh;
+    
+    }
+    .backgroundblue {
+        background-color: #26408B;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 35px;
+        border-radius: 45px;
+    }
+    
+    .container-white{
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 25px 0 0 0;
+        max-width: 1250px;
+        margin: auto;
+    }
+    
+    .white-rating{
+        background-color: rgba(255, 255, 255, 0.6);
+        color: black;
+    
+    }
+    
+    .img-container{
+       border-radius: 40px;
+       overflow: hidden;
+    }
+    
+    .img-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .gif{
+    
+    }
+    
+    #rating-txt{
+        margin-right: 15px;
+    }
+    

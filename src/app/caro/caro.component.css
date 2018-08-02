@@ -1,0 +1,170 @@
+.caro{
+    width:100%;
+    height: 500px;
+    position: relative;
+    font-family: geneva;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width:100%;
+    height: 500px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    padding-top: 125px;
+    font-family: geneva;
+}
+#logo1{
+    height: 185px;
+    width: 185px;
+
+}
+#welcome {
+    font-size: 70px;
+
+}
+.overlay h1{
+    font-size: 42px;
+}
+
+
+
+.slide{
+    width:100;
+    height: 500px;
+    overflow: hidden;
+}
+slide-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+::ng-deep .carousel-indicators{
+    z-index: 999999999999 !important;
+}
+
+::ng-deep .carousel-control-next
+{
+    z-index: 999999999999 !important;
+}
+
+::ng-deep .carousel-control-prev
+{
+    z-index: 999999999999 !important;
+}
+::ng-deep .carousel-control-prev-icon{
+    cursor: pointer;
+}
+
+::ng-deep .carousel-control-next-icon{
+    cursor: pointer;
+}
+
+::ng-deep .carousel-indicators li{
+    cursor: pointer;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+}
+.pic-container{
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.pic-container1{
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    height: 350px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.pic-container1 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#body {
+
+    padding: 35px 50px 100px 50px;
+}
+.v1 {
+    border-left: 6px solid black;
+    height: -500px;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row1{
+position: relative;
+left: 300px;
+bottom: 405px;
+}
+h5 {
+    position: relative;
+    bottom: -20px;
+    font-family: geneva;
+}
+
+
+.input-group-prepend,
+.input-group-text{
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+#logo-name *{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#logo-name img{
+    margin-top: -60px;
+
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#logo-name #welcome{
+    margin-left: -20px;
+}
+#sub1{
+    font-size: 36px;
+}
+
+.input-group{
+    width: 500px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.title-1{
+    font-size: 36px;
+}

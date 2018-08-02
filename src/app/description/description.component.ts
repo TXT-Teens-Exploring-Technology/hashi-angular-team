@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { DataService } from '../data.service';
 @Component({
   selector: 'app-description',
   templateUrl: './description.component.html',
   styleUrls: ['./description.component.css']
 })
-export class DescriptionComponent {
+export class DescriptionComponent implements  OnInit{
   public anime = [
     {
       name: 'Bleach',
@@ -92,11 +93,12 @@ export class DescriptionComponent {
   public selectedShow;
   descriptionpic;
   show = false;
-  constructor(public route: ActivatedRoute) {
+
+  constructor(public route: ActivatedRoute, public data: DataService) {
     this.route.params.subscribe((params) => {
-       this.selectedShow = this.anime.filter((data) => {
-         if (params.id === data.name) {
-           return data;
+       this.selectedShow = this.anime.filter((res) => {
+         if (params.id === res.name) {
+           return res;
          }
        });
 
@@ -111,6 +113,10 @@ export class DescriptionComponent {
   changegif() {
     this.show = false;
     // this.descriptionpic = this.selectedShow.url;
+  }
+
+    ngOnInit() {
+    this.data.setFlag(true);
   }
 
 

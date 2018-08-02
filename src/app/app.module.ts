@@ -12,6 +12,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CategoriesComponent } from './categories/categories.component';
 import { ResultsComponent } from './results/results.component';
 import { NgxCarousel3dModule } from './modules/ngx-carousel-3d/ngx-carousel-3d.module';
+import { CaroComponent } from './caro/caro.component';
+import { Caro2Component } from './caro2/caro2.component';
 
 
 
@@ -35,7 +37,9 @@ const appRoutes: Routes = [
     FilterPipe,
     DescriptionComponent,
     CategoriesComponent,
-    ResultsComponent
+    ResultsComponent,
+    CaroComponent,
+    Caro2Component
   ],
   imports: [
     BrowserModule,

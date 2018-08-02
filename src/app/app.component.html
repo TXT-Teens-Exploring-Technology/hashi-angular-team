@@ -17,7 +17,7 @@
           <a class="nav-link" href="#">Categories</a>
         </li> -->
       </ul>
-      <form class="form-inline">
+      <form class="form-inline" *ngIf="flag">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Search Non-Anime Show" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]='text' [ngModelOptions]="{standalone: true}">
           <div class="input-group-prepend">
@@ -30,8 +30,8 @@
     </div>
   </nav>
 <router-outlet></router-outlet>
-<footer>
-    <div style="background-color: #26408B"></div>
-</footer>
+
+    <div class="footer"></div>
+
 
 

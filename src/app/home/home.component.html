@@ -1,52 +1,26 @@
 <div class="caro">
   <div class="overlay">
-    <img id="logo1" src="assets/hashi-logo.png" alt="">
-    <h1 id="welcome">ashi</h1>
-    <h3 id="sub1">The Bridge Connecting Your Favorite Shows To Anime.</h3>
-    <input class="search" type="text" placeholder="Search Non-Anime Show">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">
-            <i class="fas fa-search" (click)="test()"></i>
-        </span>
-      </div>
-  </div>
-  <ngb-carousel>
-    <ng-template ngbSlide class="slide">
-      <img [src]="images[0]" alt="Random first slide">
-    </ng-template>
-    <ng-template ngbSlide class="slide">
-      <img [src]="images[1]" alt="Random first slide">
-    </ng-template>
-    <ng-template ngbSlide class="slide">
-      <img [src]="images[2]" alt="Random first slide">
-    </ng-template>
-  </ngb-carousel>
-</div>
-
-<div class="container-fluid" id="body">
-  <h5>Animes similar to Arrow</h5>
-  <div class="row">
-    <div class="col-12 col-md-6 col-lg-4" *ngFor="let item of topShows">
-      <div class="vl"></div>
-      <div class="pic-container" (click)="navigate(item.id)">
-        <img [src]="item.url" alt="">
-      </div>
+    <div id="logo-name">
+      <img id="logo1" src="assets/hashi-logo.png" alt="">
+      <h1 id="welcome">ashi</h1>
     </div>
 
+    <h3 id="sub1">The Bridge Connecting Your Favorite Shows To Anime.</h3>
+    <form class="form-inline">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Non-Anime Show" aria-label="Username" aria-describedby="basic-addon1"
+          [(ngModel)]='text' [ngModelOptions]="{standalone: true}">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fas fa-search" (click)="test()"></i>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="slide">
+    <img src="assets/brok.jpeg" alt="Random first slide">
   </div>
 </div>
-<div class="row1">
-  <ngx-carousel-3d [slides]="slides" [options]="options" class="col-12" #carousel>
-    <ngx-carousel-3d-slide *ngFor="let slide of slides; let i = index" (click)="slideClicked(i)">
-      <img class="slide-img" src="{{slide.src}}" alt="" />
-    </ngx-carousel-3d-slide>
-  </ngx-carousel-3d>
-</div>
 
-<div class="row2">
-  <ngx-carousel-3d [slides]="slide1" [options]="options1" class="col-12" #carousel1>
-    <ngx-carousel-3d-slide *ngFor="let slider of slide1; let i = index" (click)="slideClicked(i)">
-      <img class="slide-img" src="{{slider.src}}" alt="" />
-    </ngx-carousel-3d-slide>
-  </ngx-carousel-3d>
-</div>
+<app-caro></app-caro>
